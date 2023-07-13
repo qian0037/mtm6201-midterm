@@ -9,8 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Add link for h1 and h2 -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;0,300&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;0,300&display=swap" rel="stylesheet">
     <!-- Add link for paragraph -->
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
     <!-- Icon Link Styles -->
@@ -25,9 +24,10 @@
     <!-- Site Header -->
     <header class="masthead">
         <a href="#top"></a>
+        <a href="shop.html">
         <div class="refer">
-            - Refer a friend and you'll both get 15% off on all cake pops -
-        </div>
+                - Refer a friend and you'll both get 15% off on all cake pops -
+        </div></a>
         <div class="social">
             <div class="search">
                 <input type="search" placeholder="Search" name="search">
@@ -38,30 +38,30 @@
         <!-- Navigation is inside the header-->
         <nav role="navigation" class="main-nav">
             <div class="nav-container">
-                <ul role="list" class="nav-list" itemscope itemtype="https://schema.org/SiteNavigationElement">
-                    <li itemprop="home" class="list">
-                        <!-- Add anchor tags-ids that jump to each section -->
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li itemprop="about" class="list">
-                        <a href="#about-us">About</a>
-                    </li>
-                    <div class="logo">
-                        <!-- Adding an image for the site logo-->
-                        <a href="index.html"><img src="images/logo-w.svg" alt="Joyful Bites Logo">
-                        </a>
-                    </div>
-                    <li itemprop="shop" class="list">
-                        <a href="shop.html">Shop</a>
-                    </li>
-                    <li itemprop="contact" class="list">
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
+            <ul role="list" class="nav-list" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                <li itemprop="home" class="list" >
+                    <!-- Add anchor tags-ids that jump to each section -->
+                    <a href="index.html">Home</a>
+                </li>
+                <li itemprop="about" class="list">
+                    <a href="#about-us">About</a>
+                </li>
+                <div class="logo">
+                    <!-- Adding an image for the site logo-->
+                    <a href="index.html"><img src="images/logo-w.svg" alt="Joyful Bites Logo">
+                    </a>
+                </div>
+                <li itemprop="shop" class="list">
+                    <a href="shop.html">Shop</a>
+                </li>
+                <li itemprop="contact" class="list">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
         </nav>
         <div class="banner">
-            <img class="banner-img" src="images/banner-img.png" alt="Cupcakes">
+            <img class="banner-img" src="images/banner-img.png"  alt="Cupcakes" >
         </div>
         <!-- Adding a div for the about section-->
         <div class="aboutus" id="about-us">
@@ -73,26 +73,29 @@
                     owned by a passionate baker Mrs. Cooper who is dedicated to creating scrumptious cake pops using
                     only the finest and healthiest ingredients. Browse our mouthwatering selection and indulge in
                     guilt-free delights that will satisfy your sweet tooth while nourishing your body.</p>
-                <button class="button-about" href="contact.html">
-                    Connect with us <i class="fa-sharp fa-solid fa-play"></i></button>
+                <div class="buttonAbout">
+                    <a href="contact.html">
+                    <button type="button" class="button-about" href="contact.html">
+                    Learn More</button><a></div>
             </div>
         </div>
     </header>
     <!-- starting the main content of the page -->
-    <main>
+   <main>
         <!-- Adding section for contact form-->
         <section id="contact" class="contact-us">
             <div class="contactUs">
-                <h2>
+                <h2 >
                     Contact Us
                 </h2>
                 <div class="contactInfo">
                     __________
                     <br>
                     <br>
-                    TEL: 123-456-7890 / INFO@MY-DOMAIN.COM
+                    <h5>
+                    TEL: 123-456-7890 / Info@Joyfulbites.com
                     500 TERRY FRANCINE ST. SAN FRANCISCO, CA 94158
-                    OPENING HOURS 8:00AM-9:00PM
+                    OPENING HOURS 10AM-6PM</h5>
                     <br>
                     <br>
                 </div>
@@ -100,7 +103,10 @@
     </main>
     </div>
     <!-- Add a back to top button -->
-    <button class="button-top"><a href="#top"> ↑ </a></button>
+    <div class="buttonTop">
+        <a href="#top">
+        <button type="button"> ↑ </button><a></div></div>
+         
     <!-- Site Footer -->
     <footer class="footer">
         <!-- Adding an internal div for copyright -->
@@ -109,7 +115,6 @@
             <br>
             All images are taken from <a class="footer-text" href="https://www.pexels.com/">Pexels</a>
         </div>
-
     </footer>
     <!-- Footer ends right before body -->
 </body>

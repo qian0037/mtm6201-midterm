@@ -1,11 +1,12 @@
 /* Global Styles */
-/* Style the content of Homepage */
+
+/* Add a consistent font for the website */
 html {
   font-family: 'cinzel', sans-serif;
   background-color: #FBEDF2;
 }
 
-/* Add a consistent colour for h1 to h5 */
+/* Style the colour and font size for h1 to h5 */
 h1,
 h2,
 h3,
@@ -14,16 +15,6 @@ h5 {
   color: #a87284;
 }
 
-p {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 200;
-  color: #a87284;
-  font-size: 0.9rem;
-  margin: 10px;
-  line-height: 1.25rem;
-}
-
-/* Styling font size */
 h1 {
   font-size: 3.375rem;
 }
@@ -40,7 +31,17 @@ h4 {
   font-size: 1rem;
 }
 
-/* Styling the navigation list */
+/* Add a consistent font and colour for paragraph */
+p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  color: #a87284;
+  font-size: 0.9rem;
+  margin: 10px;
+  line-height: 1.25rem;
+}
+
+/* Style the navigation list */
 /* LovE HAte*/
 /* Link, Visited, Hover, Active */
 .main-nav {
@@ -88,7 +89,7 @@ h4 {
 header {
   background-color: #FBEDF2;
 }
-
+/* Style the content of Homepage */
 .banner-img {
   width: 100%;
 }
@@ -118,6 +119,11 @@ header {
   justify-content: center;
 }
 
+.search input {
+  background-color:#EFDAE2;
+  border: none;
+  border-bottom: 1px solid #a87284;
+}
 /* Style the content of About Section */
 .aboutus {
   background-size: cover;
@@ -127,6 +133,35 @@ header {
 }
 
 /* Style the content for Contact Us Page */
+
+/* Style the typing effect */
+/* Code learned and edited from https://css-tricks.com/snippets/css/typewriter-effect/ */
+.typewriter {
+  padding: 50px;
+}
+.typewriter h3 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #463c42; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  animation: 
+    typing 3.5s steps(40,end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 50% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #463c42ac; }
+}
+
 .contactUs {
   padding-top: 60px;
 }
@@ -137,7 +172,6 @@ header {
 
 .contactInfo {
   display: block;
-  margin-left: 80px;
   color: #a87284;
   width: 80%;
 }
@@ -179,10 +213,20 @@ button {
   padding: 10px;
   opacity: 70%;
   border: 0;
+  cursor: pointer;
 }
 
-.button-top {
-  text-decoration: none;
+button:hover {
+  background-color:#EFDAE2;
+  color: #a87284;
+  border: 0.7px solid #a87284;
+  transition: 0.5s;
+}
+
+.buttonTop {
+  display: flex;
+  justify-content: end;
+  margin-right: 30px;
 }
 
 .send-message {
@@ -217,6 +261,7 @@ table {
   font-size: 0.8rem;
   color: #a87284;
   padding-top: 50px;
+  padding-bottom: 20px;
 }
 
 .footer-text {
@@ -227,10 +272,6 @@ table {
 
 .ingredients {
   padding: 30px;
-}
-
-.ourIngredients {
-  padding: 2px;
 }
 
 .productIntro {
@@ -315,6 +356,7 @@ table {
   .search {
     display: flex;
     justify-content: flex-end;
+    padding-top: 0;
   }
 
   .nav-container {
@@ -340,17 +382,15 @@ table {
 
   .contactInfo {
     width: 30%;
-  }
-
-  .search {
-    padding-top: 0;
-  }
+  margin-left: 80px;
+    }
+  
 
   .button-search {
     margin: 0;
   }
 
-  .button-send {
+  .buttonSend {
     margin: 0;
   }
 
@@ -376,8 +416,6 @@ table {
   .ingredients {
     padding: 30px;
   }
-
-  .ourIngredients {}
 
   .items {
     display: flex;
