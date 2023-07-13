@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Link Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;0,300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <!-- Icon Link Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Joyful Bites - Contact</title>
+</head>
+
+<body>
+    <header class="masthead">
+        <div class="refer">
+
+            - Refer a friend and you'll both get 15% off on all cake pops -
+
+        </div>
+        <div class="social">
+            <div class="search">
+                <input type="search" placeholder="Search" name="search">
+                <button type="submit" class="button-search"><i
+                        class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+        <!-- Navigation is inside the header-->
+        <nav class="main-nav">
+            <div class="nav-container">
+                <ul class="nav-list">
+                    <li class="list">
+                        <!-- Adding anchor tags-ids that jump to each section -->
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="list">
+                        <a href="index.html">About</a>
+                    </li>
+                    <div class="logo">
+                        <!-- Adding an image -->
+                        <a href="index.html"><img src="images/logo-w.svg" alt="Joyful Bites Logo">
+                        </a>
+                    </div>
+                    <li class="list">
+                        <a href="shop.html">Shop</a>
+                    </li>
+                    <li class="list">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <!--  -->
+        </nav>
+        <!-- Adding a div for banner -->
+    </header>
+    <section id="contact-form" class="contactform">
+        <div class="contact-content">
+            <div class="send-message">
+                Send us a message
+            </div>
+            <form class="contactform" action="contact.html" method="get">
+                <div>
+                    <label for="fullname">Full name</label>
+                    <br>
+                    <input class="input" type="text" name="fullname" id="fullname" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <br>
+                    <input class="input" type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <br>
+                    <input class="input" name="message" id="message">
+                </div>
+                <div>
+                    <button class="button-send" type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+        </div>
+        <!-- Adding section for operation table-->
+        <div class="operation">
+            <h3 class="hours">
+                Hours of operation
+            </h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Days</th>
+                        <th>Hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday - Saturday</td>
+                        <td>10 AM - 6 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>Closed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+
+</html>
