@@ -134,7 +134,7 @@ header {
 
 /* Style the content for Contact Us Page */
 
-/* Style the typing effect */
+/* Add animations */
 /* Code learned and edited from https://css-tricks.com/snippets/css/typewriter-effect/ */
 .typewriter {
   padding: 50px;
@@ -160,6 +160,19 @@ header {
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: #463c42ac; }
+}
+/* The shaking effect */
+@keyframes changeColour  {
+  0%   {background-color:#463c42;}
+  25%  {background-color:#463c42 70%;}
+  50%  {background-color: #463c42 50%;}
+  100% {background-color: #a87284 90%}
+}
+
+.refer {
+  animation-name: changeColour;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 .contactUs {
@@ -419,20 +432,21 @@ table {
 
   .items {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
   }
 
   .ourProducts {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-left: 120px;
   }
 
   .ourProducts img {
     border-radius: 180px;
-    width: 30%;
+    width: 15%;
     height: auto;
   }
 
