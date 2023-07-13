@@ -1,0 +1,406 @@
+/* Global Styles */
+/* Style the content of Homepage */
+html {
+  font-family: 'cinzel', sans-serif;
+  background-color: #FBEDF2;
+}
+
+/* Add a consistent colour for h1 to h5 */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #a87284;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  color: #a87284;
+  font-size: 0.9rem;
+  margin: 10px;
+  line-height: 1.25rem;
+}
+
+/* Styling font size */
+h1 {
+  font-size: 3.375rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+/* Styling the navigation list */
+/* LovE HAte*/
+/* Link, Visited, Hover, Active */
+.main-nav {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #463c42;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px;
+}
+
+.nav-list {
+  color: #a87284;
+}
+
+.nav-list .list a,
+.nav-list .list a:link,
+.nav-list .list a:visited {
+  padding: 50 px;
+  font-size: 0.9em;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-list .list a:hover,
+.nav-list .list a:focus,
+.nav-list .list a.current {
+  text-decoration: underline;
+}
+
+.nav-list .list {
+  list-style: none;
+  text-decoration: none;
+  padding: 15px;
+  width: auto;
+  border: none;
+  display: block;
+  line-height: 15px;
+}
+
+header {
+  background-color: #FBEDF2;
+}
+
+.banner-img {
+  width: 100%;
+}
+
+.refer {
+  font-size: 0.9rem;
+  text-align: center;
+  background-color: #a87284;
+  color: white;
+  position: fixed;
+}
+
+.social {
+  padding: 5px
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  padding: 5px;
+  width: 80%;
+}
+
+.search {
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Style the content of About Section */
+.aboutus {
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+  height: 200px;
+}
+
+/* Style the content for Contact Us Page */
+.contactUs {
+  padding-top: 60px;
+}
+
+.contact-form {
+  color: #a87284;
+}
+
+.contactInfo {
+  display: block;
+  margin-left: 80px;
+  color: #a87284;
+  width: 80%;
+}
+
+label {
+  color: #a87284;
+}
+
+.contactform {
+  text-align: center;
+}
+
+#fullname,
+#email {
+  border: 0.5px solid #a87284;
+  width: 200px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+#message {
+  height: 150px;
+  width: 300px;
+  margin-bottom: 15px;
+  border: 0.5px solid #a87284;
+}
+
+.input {
+  background-color: #EFDAE2;
+}
+
+button {
+  font-size: 0.9rem;
+  font-family: 'cinzel', sans-serif;
+  background-color: #a87284;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  opacity: 70%;
+  border: 0;
+}
+
+.button-top {
+  text-decoration: none;
+}
+
+.send-message {
+  font-size: 1.5rem;
+  color: #a87284;
+  padding: 100px;
+}
+
+table {
+  width: 70%;
+  margin: 0 auto;
+  color: #a87284;
+}
+
+.hours {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  margin: 0
+}
+
+.operation {
+  padding: 30px;
+}
+
+.backtotop {
+  text-decoration: none;
+  color: #a87284;
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #a87284;
+  padding-top: 50px;
+}
+
+.footer-text {
+  color: #463c42;
+}
+
+/* Style the content of Shop Page */
+
+.ingredients {
+  padding: 30px;
+}
+
+.ourIngredients {
+  padding: 2px;
+}
+
+.productIntro {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 20px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.ourProducts {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.ourProducts img {
+  border-radius: 180px;
+  width: 50%;
+  height: auto;
+}
+
+.buttonCart {
+  margin: 0;
+}
+
+/**********************  
+      Desktop Style
+***********************/
+
+/* Desgin a media query for screens with a minimum width of 760px */
+
+@media screen and (min-width: 760px) {
+
+  h1,
+  h2,
+  h3 {
+    margin-left: 80px;
+  }
+
+  p {
+    margin-left: 80px;
+    margin-right: 400px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    ;
+  }
+
+  .refer {
+    padding: 15px;
+    opacity: 80%;
+  }
+
+  /* Styling navigation */
+  .main-nav {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #463c42;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60px;
+  }
+
+  .main-nav .list {
+    margin: 20px 20px;
+    flex-grow: 1;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .search {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav-container {
+    width: 50%;
+  }
+
+  .logo {
+    width: 15%;
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+  }
+
+  #fullname,
+  #email {
+    width: 300px;
+  }
+
+  #message {
+    width: 400px;
+
+  }
+
+  .contactInfo {
+    width: 30%;
+  }
+
+  .search {
+    padding-top: 0;
+  }
+
+  .button-search {
+    margin: 0;
+  }
+
+  .button-send {
+    margin: 0;
+  }
+
+  button {
+    margin-left: 80px;
+  }
+
+  table {
+    width: 30%;
+    margin: 0 auto;
+    color: #a87284;
+  }
+
+  .hours {
+    padding: 30px;
+  }
+
+  .operation {
+    padding: 50px;
+  }
+
+  /* Style the content of Shop Page */
+  .ingredients {
+    padding: 30px;
+  }
+
+  .ourIngredients {}
+
+  .items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .ourProducts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ourProducts img {
+    border-radius: 180px;
+    width: 30%;
+    height: auto;
+  }
+
+
+  /* Style the Site footer */
+  .footer {
+    padding-top: 30px;
+  }
+}
