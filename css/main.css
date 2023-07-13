@@ -161,7 +161,7 @@ header {
   from, to { border-color: transparent }
   50% { border-color: #463c42ac; }
 }
-/* The shaking effect */
+/* The colour changing effect */
 @keyframes changeColour  {
   0%   {background-color:#463c42;}
   25%  {background-color:#463c42 70%;}
@@ -171,6 +171,27 @@ header {
 
 .refer {
   animation-name: changeColour;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+/* The growing effect */
+@keyframes growing {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1; 
+    transform: scale(0.7);
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+.buttonCart {
+  animation-name: growing;
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
