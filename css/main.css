@@ -125,10 +125,8 @@ header {
   border-bottom: 1px solid #a87284;
 }
 /* Style the content of About Section */
-.aboutus {
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-top: 20px;
+.aboutUs {
+  padding: 20px;
   height: 200px;
 }
 
@@ -194,14 +192,17 @@ header {
   animation-name: growing;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+  margin:0;
 }
 
 .contactUs {
   padding-top: 60px;
+  padding: 20px;
 }
 
-.contact-form {
+.contactForm {
   color: #a87284;
+  text-align: center;
 }
 
 .contactInfo {
@@ -212,10 +213,6 @@ header {
 
 label {
   color: #a87284;
-}
-
-.contactform {
-  text-align: center;
 }
 
 #fullname,
@@ -332,10 +329,6 @@ table {
   border-radius: 180px;
   width: 50%;
   height: auto;
-}
-
-.buttonCart {
-  margin: 0;
 }
 
 /**********************  

@@ -61,10 +61,21 @@
         </div>
         </nav>
         <div class="banner">
-            <img class="banner-img" src="images/banner-img.png"  alt="Cupcakes decorated with flower shaped frosting" >
+            <picture>
+                <source srcset="images/banner-img-467_x250.png 467w, 
+                images/banner-img-700_x375.png 700w,
+                images/banner-img.png 1400w"
+                        media="(max-width: 699px)" 
+                        sizes="(max-width: 699px) 100vw">
+                <source srcset="images/banner-img 1200w" 
+                  media="(min-width: 700px)"
+                  sizes="(min-width: 700px) 100vw">
+                <img src="images/banner-img.png" alt="Cupcakes decorated with flower shaped frosting">
+              </picture>
         </div>
-        <!-- Adding a div for the about section-->
-        <div class="aboutus" id="about-us">
+        </header>
+            <!-- start the main content of the page --> <main>
+        <div class="aboutUs" id="about-us">
             <h2>
                 About Joyful Bites
             </h2>
@@ -79,11 +90,8 @@
                     Learn More</button><a></div>
             </div>
         </div>
-    </header>
-    <!-- starting the main content of the page -->
-   <main>
-        <!-- Adding section for contact form-->
-        <section id="contact" class="contact-us">
+        <!-- Add section for contact -->
+        <section id="contact">
             <div class="contactUs">
                 <h2 >
                     Contact Us
