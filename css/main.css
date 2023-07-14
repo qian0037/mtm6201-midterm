@@ -31,7 +31,7 @@ h4 {
   font-size: 1rem;
 }
 
-/* Add a consistent font and colour for paragraph */
+/* Add a consistent font and colour for all paragraphs */
 p {
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
@@ -89,7 +89,9 @@ p {
 header {
   background-color: #FBEDF2;
 }
+
 /* Style the content of Homepage */
+
 .bannerImg {
   width: 100%;
 }
@@ -120,10 +122,11 @@ header {
 }
 
 .search input {
-  background-color:#EFDAE2;
+  background-color: #EFDAE2;
   border: none;
   border-bottom: 1px solid #a87284;
 }
+
 /* Style the content of About Section */
 .aboutUs {
   padding: 20px;
@@ -137,34 +140,63 @@ header {
 .typewriter {
   padding: 50px;
 }
+
 .typewriter h3 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid #463c42; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #463c42;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em;
-  animation: 
-    typing 3.5s steps(40,end),
+  animation:
+    typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 50% }
+  from {
+    width: 0
+  }
+
+  to {
+    width: 50%
+  }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #463c42ac; }
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: #463c42ac;
+  }
 }
+
 /* The colour changing effect */
-@keyframes changeColour  {
-  0%   {background-color:#463c42;}
-  25%  {background-color:#463c42 70%;}
-  50%  {background-color: #463c42 50%;}
-  100% {background-color: #a87284 90%}
+@keyframes changeColour {
+  0% {
+    background-color: #463c42;
+  }
+
+  25% {
+    background-color: #463c42 70%;
+  }
+
+  50% {
+    background-color: #463c42 50%;
+  }
+
+  100% {
+    background-color: #a87284 90%
+  }
 }
 
 .refer {
@@ -178,11 +210,12 @@ header {
   0% {
     opacity: 1;
   }
+
   50% {
-    opacity: 1; 
+    opacity: 1;
     transform: scale(0.7);
   }
-  
+
   100% {
     opacity: 1;
   }
@@ -192,7 +225,7 @@ header {
   animation-name: growing;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-  margin:0;
+  margin: 0;
 }
 
 .contactUs {
@@ -248,7 +281,7 @@ button {
 }
 
 button:hover {
-  background-color:#EFDAE2;
+  background-color: #EFDAE2;
   color: #a87284;
   border: 0.7px solid #a87284;
   transition: 0.5s;
@@ -284,6 +317,15 @@ table {
 
 .backtotop {
   text-decoration: none;
+  color: #a87284;
+}
+
+.socialMedia {
+  text-align: center;
+}
+
+.icons {
+  font-size: 1.5rem;
   color: #a87284;
 }
 
@@ -358,10 +400,9 @@ table {
     opacity: 80%;
   }
 
-  /* Styling navigation */
+  /* Style the navigation */
   .main-nav {
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     margin: 0 auto;
     background-color: #463c42;
@@ -409,9 +450,9 @@ table {
 
   .contactInfo {
     width: 30%;
-  margin-left: 80px;
-    }
-  
+    margin-left: 80px;
+  }
+
 
   .button-search {
     margin: 0;

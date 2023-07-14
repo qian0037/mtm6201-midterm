@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Add link for h1 and h2 -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;0,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;0,300&display=swap"
+        rel="stylesheet">
     <!-- Add link for paragraph -->
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
     <!-- Icon Link Styles -->
@@ -25,9 +26,10 @@
     <header class="masthead">
         <a href="#top"></a>
         <a href="shop.html">
-        <div class="refer">
+            <div class="refer">
                 - Refer a friend and you'll both get 15% off on all cake pops -
-        </div></a>
+            </div>
+        </a>
         <div class="social">
             <div class="search">
                 <input type="search" placeholder="Search" name="search">
@@ -38,40 +40,39 @@
         <!-- Navigation is inside the header-->
         <nav role="navigation" class="main-nav">
             <div class="nav-container">
-            <ul role="list" class="nav-list" itemscope itemtype="https://schema.org/SiteNavigationElement">
-                <li itemprop="home" class="list" >
-                    <!-- Add anchor tags-ids that jump to each section -->
-                    <a href="index.html">Home</a>
-                </li>
-                <li itemprop="about" class="list">
-                    <a href="#about-us">About</a>
-                </li>
-                <div class="logo">
-                    <!-- Add an image for the site logo-->
-                    <a href="index.html"><img src="images/logo-w.svg" alt="Joyful Bites Logo">
-                    </a>
-                </div>
-                <li itemprop="shop" class="list">
-                    <a href="shop.html">Shop</a>
-                </li>
-                <li itemprop="contact" class="list">
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
+                <ul role="list" class="nav-list" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                    <li itemprop="home" class="list">
+                        <!-- Add anchor tags-ids that jump to each section -->
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li itemprop="about" class="list">
+                        <a href="#about-us">About</a>
+                    </li>
+                    <div class="logo">
+                        <!-- Add an image for the site logo-->
+                        <a href="index.html"><img src="images/logo-w.svg" alt="Joyful Bites Logo">
+                        </a>
+                    </div>
+                    <li itemprop="shop" class="list">
+                        <a href="shop.html">Shop</a>
+                    </li>
+                    <li itemprop="contact" class="list">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <div class="banner">
-            <picture>
+            <picture itemprop="image">
                 <source srcset="images/banner-img-467_x250.png 467w, 
                 images/banner-img-700_x375.png 700w,
-                images/banner-img.png 1400w"
-                  sizes="(min-width: 760px) 50vw, 100vw">
+                images/banner-img.png 1400w" sizes="(min-width: 760px) 50vw, 100vw">
                 <img class="bannerImg" src="images/banner-img.png" alt="Cupcakes decorated with flower shaped frosting">
-              </picture>
+            </picture>
         </div>
-        </header>
-            <!-- start the main content of the page --> 
-        <main>
+    </header>
+    <!-- start the main content of the page -->
+    <main>
         <div class="aboutUs" id="about-us">
             <h2>
                 About Joyful Bites
@@ -83,14 +84,14 @@
                     guilt-free delights that will satisfy your sweet tooth while nourishing your body.</p>
                 <div class="buttonAbout">
                     <a href="shop.html">
-                    <button type="button" class="button-about">
-                    Learn More</button><a></div>
+                        <button type="button" class="button-about">
+                            Learn More</button><a></div>
             </div>
         </div>
         <!-- Add a contact section -->
         <section id="contact">
             <div class="contactUs">
-                <h2 >
+                <h2>
                     Contact Us
                 </h2>
                 <div class="contactInfo">
@@ -98,9 +99,9 @@
                     <br>
                     <br>
                     <h5>
-                    TEL: 123-456-7890 / Info@Joyfulbites.com
-                    500 TERRY FRANCINE ST. SAN FRANCISCO, CA 94158
-                    OPENING HOURS 10AM-6PM</h5>
+                        TEL: 123-456-7890 / Info@Joyfulbites.com
+                        500 TERRY FRANCINE ST. SAN FRANCISCO, CA 94158
+                        OPENING HOURS 10AM-6PM</h5>
                     <br>
                     <br>
                 </div>
@@ -110,13 +111,17 @@
     <!-- Add a back to top button -->
     <div class="buttonTop">
         <a href="#top">
-        <button type="button"> ↑ </button>
-        <a>
-        </div>
+            <button type="button"> ↑ </button>
+            <a>
     </div>
-         
+    </div>
+    <div class="socialMedia">
+            <a class="icons" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            <a class="icons" href="mailto: info@joyfulbites.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+         <a class="icons" href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+    </div>
     <!-- Site Footer -->
-    <footer class="footer">
+    <footer role="contentinfo" class="footer">
         <!-- Add an internal div for copyright -->
         <div class="copyright">
             &copy; Joyful Bites, 2023
